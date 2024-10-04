@@ -6,20 +6,15 @@
 /*   By: rmunoz-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 12:44:53 by rmunoz-s          #+#    #+#             */
-/*   Updated: 2024/09/25 18:05:51 by rmunoz-s         ###   ########.fr       */
+/*   Updated: 2024/09/29 17:38:30 by rmunoz-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_digit(int c)
+int	ft_isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
-	{
+	if (c >= '0' && c <= '9')
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: rmunoz-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 10:43:40 by rmunoz-s          #+#    #+#             */
-/*   Updated: 2024/09/25 16:59:59 by rmunoz-s         ###   ########.fr       */
+/*   Updated: 2024/10/04 10:09:57 by rmunoz-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	char		*str;
+	char		find_c;
+	size_t		i;
 
-	i = 0;
-	while (s[i] != '\0')
+	str = (char *)s;
+	find_c = (char)c;
+	i = ft_strlen(s);
+	while (i > 0)
 	{
-		i++;
-	}
-	while (i != 0)
-	{
-		if (s[i] == c)
-		{
-			return (i);
-		}
+		if (str[i] == find_c)
+			return (str + i);
 		i--;
 	}
-	return ('\0');
+	if (str[0] == find_c)
+		return (str);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: rmunoz-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:27:48 by rmunoz-s          #+#    #+#             */
-/*   Updated: 2024/09/25 17:00:47 by rmunoz-s         ###   ########.fr       */
+/*   Updated: 2024/09/29 12:40:00 by rmunoz-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,11 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	size_t	i;
 
 	i = 0;
-	if (s == NULL)
-		return (NULL);
+	if (s == NULL || f == NULL)
+		return ;
 	while (s[i] != '\0')
 	{
-		s[i] = f(i, s[i]);
+		f(i, &s[i]);
 		i++;
 	}
-	s[i] = '\0';
-	return (s);
 }

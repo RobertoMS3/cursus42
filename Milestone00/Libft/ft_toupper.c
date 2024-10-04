@@ -6,13 +6,13 @@
 /*   By: rmunoz-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 10:28:40 by rmunoz-s          #+#    #+#             */
-/*   Updated: 2024/09/25 16:59:21 by rmunoz-s         ###   ########.fr       */
+/*   Updated: 2024/09/29 15:41:08 by rmunoz-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{

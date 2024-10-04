@@ -6,7 +6,7 @@
 #    By: rmunoz-s <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/25 12:26:20 by rmunoz-s          #+#    #+#              #
-#    Updated: 2024/09/25 13:06:47 by rmunoz-s         ###   ########.fr        #
+#    Updated: 2024/09/29 13:06:20 by rmunoz-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ $(NAME): $(OBJ)
 clean :
 	rm -f $(OBJ)
 
-ftclean: clean
+fclean: clean
 	rm -f $(NAME)
 	
 re: ftclean all 
