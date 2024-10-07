@@ -6,7 +6,7 @@
 #    By: rmunoz-s <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/25 12:26:20 by rmunoz-s          #+#    #+#              #
-#    Updated: 2024/09/29 13:06:20 by rmunoz-s         ###   ########.fr        #
+#    Updated: 2024/10/07 10:06:24 by rmunoz-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,4 +36,4 @@ clean :
 fclean: clean
 	rm -f $(NAME)
 	
-re: ftclean all 
+re: fclean all 
